@@ -1,5 +1,7 @@
 name: flutter_jailbreak_detection_example
 description: Demonstrates how to use the flutter_jailbreak_detection plugin.
+author: Jeroen Trappers <jeroen@appmire.be>
+homepage: https://github.com/jeroentrappers/flutter_jailbreak_detection
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
