@@ -1,10 +1,16 @@
 # flutter_jailbreak_detection
 
-Flutter jailbreak and root detection plugin
+Flutter jailbreak and root detection plugin.
+
+It uses [RootBeer]() on Android,
+and [DTTJailbreakDetection](https://github.com/thii/DTTJailbreakDetection) on iOS.
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+```
+import 'package:flutter_jailbreak_detection/flutter_jailbreak_detection.dart';
 
-For help on editing plugin code, view the [documentation](https://flutter.io/developing-packages/#edit-plugin-package).
+bool jailbroken = await FlutterJailbreakDetection.jailbroken;
+bool developerMode = await FlutterJailbreakDetection.developerMode; // android only.
+
+```
