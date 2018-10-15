@@ -1,5 +1,6 @@
 import Flutter
 import UIKit
+import DTTJailbreakDetection
 
 public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -9,6 +10,18 @@ public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    result("iOS " + UIDevice.current.systemVersion)
+        switch call.method {
+        case "jailbroken":
+            
+            let isJailBroken = DTTJailbreakDetection.isJailbroken()
+        
+            result(isJailBroken)
+            break
+        case "developerMode":
+            result(false)
+            break
+        default:
+            result(FlutterMethodNotImplemented)
+        }
   }
 }
