@@ -1,11 +1,11 @@
 name: flutter_jailbreak_detection
 description: Flutter jailbreak and root detection plugin
 version: 1.0.0
-author: Jeroen Trappers <jeroen@appmire.be>
 homepage: https://github.com/jeroentrappers/flutter_jailbreak_detection
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
+  flutter: ">=1.10.0 <2.0.0"
 
 dependencies:
   flutter:
@@ -13,5 +13,9 @@ dependencies:
 
 flutter:
   plugin:
-    androidPackage: appmire.be.flutterjailbreakdetection
-    pluginClass: FlutterJailbreakDetectionPlugin
+    platforms:
+      android:
+        package: appmire.be.flutterjailbreakdetection
+        pluginClass: FlutterJailbreakDetectionPlugin
+      ios:
+        pluginClass: FlutterJailbreakDetectionPlugin

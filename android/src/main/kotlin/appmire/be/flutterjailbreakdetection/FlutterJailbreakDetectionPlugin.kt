@@ -13,6 +13,9 @@ class FlutterJailbreakDetectionPlugin(private val context: Activity) : MethodCal
     companion object {
         @JvmStatic
         fun registerWith(registrar: Registrar): Unit {
+            if (null == registrar.activity()) {
+                return;
+            }
             val channel = MethodChannel(registrar.messenger(), "flutter_jailbreak_detection")
             channel.setMethodCallHandler(FlutterJailbreakDetectionPlugin(registrar.activity()))
         }
