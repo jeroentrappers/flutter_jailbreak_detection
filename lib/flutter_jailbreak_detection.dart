@@ -15,5 +15,4 @@ class FlutterJailbreakDetection {
     bool developerMode = await _channel.invokeMethod('developerMode');
     return developerMode;
   }
-
 }
