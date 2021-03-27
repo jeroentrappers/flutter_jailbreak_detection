@@ -12,8 +12,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  bool _jailbroken;
-  bool _developerMode;
+  bool? _jailbroken;
+  bool? _developerMode;
 
   @override
   void initState() {
@@ -54,8 +54,8 @@ class _MyAppState extends State<MyApp> {
         ),
         body:  Center(
           child: Column( mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[Text('Jailbroken: ${_jailbroken == null ? "Unknown" : _jailbroken ? "YES" : "NO"}'),
-            Text('Developer mode: ${_developerMode == null ? "Unknown" : _developerMode ? "YES" : "NO"}')
+            children: <Widget>[Text('Jailbroken: ${_jailbroken == null ? "Unknown" : _jailbroken! ? "YES" : "NO"}'),
+            Text('Developer mode: ${_developerMode == null ? "Unknown" : _developerMode! ? "YES" : "NO"}')
             ],
           ),
         ),
