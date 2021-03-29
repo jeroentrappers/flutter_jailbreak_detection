@@ -1,3 +1,7 @@
+## 1.5.0
+Upgrade to kotlin 1.3.30. Thanks https://github.com/kmoorejr9 for the PR.
+Support for null safety.  Thanks https://github.com/tvh for the PR.
+Rootbeer dependency fix. Thanks https://github.com/benoitskipr for the PR.
 
 ## 1.4.0
 
