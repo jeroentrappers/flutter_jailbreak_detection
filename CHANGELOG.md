@@ -1,3 +1,7 @@
+## 1.6.0
+
+* Upgrade rootbeer to 0.0.9
+
 ## 1.5.0
 Upgrade to kotlin 1.3.30. Thanks https://github.com/kmoorejr9 for the PR.
 Support for null safety.  Thanks https://github.com/tvh for the PR.
