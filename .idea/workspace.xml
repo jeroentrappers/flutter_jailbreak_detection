@@ -28,25 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34de2f17-d8a7-4122-a59f-d875168b5cb3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_jailbreak_detection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_jailbreak_detection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +57,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -125,25 +108,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="320" key="FileChooserDialogImpl" timestamp="1617002149080">
+    <state x="744" y="320" key="FileChooserDialogImpl" timestamp="1617010353629">
       <screen x="0" y="48" width="1920" height="1032" />
     </state>
-    <state x="744" y="320" key="FileChooserDialogImpl/0.48.1920.1032@0.48.1920.1032" timestamp="1617002149080" />
-    <state width="1662" height="412" key="GridCell.Tab.0.bottom" timestamp="1617008783629">
+    <state x="744" y="320" key="FileChooserDialogImpl/0.48.1920.1032@0.48.1920.1032" timestamp="1617010353629" />
+    <state width="1662" height="412" key="GridCell.Tab.0.bottom" timestamp="1617010356603">
       <screen x="0" y="48" width="1920" height="1032" />
     </state>
-    <state width="1662" height="412" key="GridCell.Tab.0.bottom/0.48.1920.1032@0.48.1920.1032" timestamp="1617008783629" />
-    <state width="1662" height="412" key="GridCell.Tab.0.center" timestamp="1617008783629">
+    <state width="1662" height="412" key="GridCell.Tab.0.bottom/0.48.1920.1032@0.48.1920.1032" timestamp="1617010356603" />
+    <state width="1662" height="412" key="GridCell.Tab.0.center" timestamp="1617010356602">
       <screen x="0" y="48" width="1920" height="1032" />
     </state>
-    <state width="1662" height="412" key="GridCell.Tab.0.center/0.48.1920.1032@0.48.1920.1032" timestamp="1617008783629" />
-    <state width="1662" height="412" key="GridCell.Tab.0.left" timestamp="1617008783629">
+    <state width="1662" height="412" key="GridCell.Tab.0.center/0.48.1920.1032@0.48.1920.1032" timestamp="1617010356602" />
+    <state width="1662" height="412" key="GridCell.Tab.0.left" timestamp="1617010356601">
       <screen x="0" y="48" width="1920" height="1032" />
     </state>
-    <state width="1662" height="412" key="GridCell.Tab.0.left/0.48.1920.1032@0.48.1920.1032" timestamp="1617008783628" />
-    <state width="1662" height="412" key="GridCell.Tab.0.right" timestamp="1617008783629">
+    <state width="1662" height="412" key="GridCell.Tab.0.left/0.48.1920.1032@0.48.1920.1032" timestamp="1617010356601" />
+    <state width="1662" height="412" key="GridCell.Tab.0.right" timestamp="1617010356602">
       <screen x="0" y="48" width="1920" height="1032" />
     </state>
-    <state width="1662" height="412" key="GridCell.Tab.0.right/0.48.1920.1032@0.48.1920.1032" timestamp="1617008783629" />
+    <state width="1662" height="412" key="GridCell.Tab.0.right/0.48.1920.1032@0.48.1920.1032" timestamp="1617010356602" />
   </component>
 </project>
