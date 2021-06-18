@@ -1,6 +1,6 @@
 import Flutter
 import UIKit
-import DTTJailbreakDetection
+import IOSSecuritySuite
 
 public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -12,10 +12,12 @@ public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
         case "jailbroken":
-            
-            let isJailBroken = DTTJailbreakDetection.isJailbroken()
-        
-            result(isJailBroken)
+                        
+            if IOSSecuritySuite.amIJailbroken() {
+                result(true)
+            } else {
+                result(false)
+            }
             break
         case "developerMode":
             result(false)
