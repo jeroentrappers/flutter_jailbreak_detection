@@ -16,7 +16,7 @@ public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
         }
         else{
           let isJailBroken = DTTJailbreakDetection.isJailbroken()
-          result(true)
+          result(isJailBroken)
         }
         break
       case "developerMode":
