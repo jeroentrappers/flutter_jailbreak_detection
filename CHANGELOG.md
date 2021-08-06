@@ -1,3 +1,8 @@
+## 1.7.0
+
+* Upgrade rootbeer to 0.0.10
+Thanks https://github.com/patuoynageek for the PR.
+
 ## 1.6.0
 
 * Upgrade rootbeer to 0.0.9
