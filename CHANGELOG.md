@@ -1,3 +1,11 @@
+## 1.8.0
+
+* Upgrade android embedding
+  Thanks https://github.com/xPutnikx for the PR.
+  
+* Fixed header issue
+  Thanks https://github.com/cr0manty for the PR.
+
 ## 1.7.0
 
 * Upgrade rootbeer to 0.0.10
