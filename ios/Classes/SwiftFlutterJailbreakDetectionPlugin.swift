@@ -13,7 +13,11 @@ public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
         switch call.method {
         case "jailbroken":
             
-            let isJailBroken = DTTJailbreakDetection.isJailbroken()
+            var isiOSAppOnMac = false
+            if #available(iOS 14.0, *) {
+                isiOSAppOnMac = ProcessInfo.processInfo.isiOSAppOnMac
+            }
+            let isJailBroken = DTTJailbreakDetection.isJailbroken() && !isiOSAppOnMac
         
             result(isJailBroken)
             break
