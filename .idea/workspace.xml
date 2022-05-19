@@ -28,14 +28,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec23ca87-2683-486a-9f09-28f9cfe53b3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/appmire/be/flutterjailbreakdetection/FlutterJailbreakDetectionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/appmire/be/flutterjailbreakdetection/FlutterJailbreakDetectionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/FlutterJailbreakDetectionPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/FlutterJailbreakDetectionPlugin.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterJailbreakDetectionPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterJailbreakDetectionPlugin.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

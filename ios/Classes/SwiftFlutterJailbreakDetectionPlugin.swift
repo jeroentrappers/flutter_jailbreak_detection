@@ -12,15 +12,19 @@ public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
         case "jailbroken":
-                        
-            if IOSSecuritySuite.amIJailbroken() {
+            if IOSSecuritySuite.amIJailbroken() || IOSSecuritySuite.amIReverseEngineered() {
                 result(true)
             } else {
                 result(false)
             }
             break
         case "developerMode":
-            result(false)
+            if IOSSecuritySuite.amIDebugged() {
+                result(true)
+            }
+            else {
+                result(false)
+            }            
             break
         default:
             result(FlutterMethodNotImplemented)
