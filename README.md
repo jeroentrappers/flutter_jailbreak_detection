@@ -3,7 +3,7 @@
 Flutter jailbreak and root detection plugin.
 
 It uses [RootBeer](https://github.com/scottyab/rootbeer) on Android,
-and [DTTJailbreakDetection](https://github.com/thii/DTTJailbreakDetection) on iOS.
+and [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite) on iOS.
 
 ## Getting Started
 
