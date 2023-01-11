@@ -2,7 +2,7 @@ package appmire.be.flutterjailbreakdetection
 
 import android.content.Context
 import android.provider.Settings
-import com.kimchangyoun.rootbeerFresh.RootBeer
+import com.scottyab.rootbeer.RootBeer
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
