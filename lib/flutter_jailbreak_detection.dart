@@ -7,9 +7,9 @@ class FlutterJailbreakDetection {
       const MethodChannel('flutter_jailbreak_detection');
 
   static Future<bool> jailbroken({bool setLogging = true}) async {
-    bool? jailbroken = await _channel.invokeMethod<bool>('jailbroken', [
-      {"setLogging": setLogging}
-    ]);
+    bool? jailbroken = await _channel.invokeMethod<bool>(
+        'jailbroken', <String, dynamic>{"setLogging": setLogging});
+
     return jailbroken ?? true;
   }
 
