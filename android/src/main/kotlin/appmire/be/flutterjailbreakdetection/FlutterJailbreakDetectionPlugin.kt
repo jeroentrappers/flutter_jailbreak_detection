@@ -42,7 +42,7 @@ class FlutterJailbreakDetectionPlugin : FlutterPlugin, MethodCallHandler {
         if (call.method.equals("jailbroken")) {
             val rootBeer = RootBeer(context)
             Log.e(call.arguments)
-            val setLogging: Boolean = call.arguments<Boolean>("setLogging")
+            val setLogging by Boolean = call.arguments<Boolean>("setLogging")
             rootBeer.setLogging(setLogging)
             result.success(rootBeer.isRooted)
         } else if (call.method.equals("developerMode")) {
