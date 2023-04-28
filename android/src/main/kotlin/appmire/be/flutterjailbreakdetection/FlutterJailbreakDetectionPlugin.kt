@@ -12,7 +12,6 @@ import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.FlutterPlugin.FlutterPluginBinding
 
 
-
 class FlutterJailbreakDetectionPlugin : FlutterPlugin, MethodCallHandler {
     private lateinit var context: Context
     private lateinit var channel: MethodChannel
@@ -44,6 +43,9 @@ class FlutterJailbreakDetectionPlugin : FlutterPlugin, MethodCallHandler {
             result.success(rootBeer.isRooted)
         } else if (call.method.equals("developerMode")) {
             result.success(isDevMode())
+        } else if (call.method.equals("rooted")) {
+            val rootBeer = RootBeer(context)
+            result.success(rootBeer.isRooted)
         } else {
             result.notImplemented()
         }

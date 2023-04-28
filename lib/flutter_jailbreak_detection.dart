@@ -12,7 +12,7 @@ class FlutterJailbreakDetection {
   }
 
   static Future<bool> get rooted async {
-    bool? isRooted = await _channel.invokeMethod<bool>('jailbroken');
+    bool? isRooted = await _channel.invokeMethod<bool>('rooted');
     return isRooted ?? true;
   }
 
