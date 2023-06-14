@@ -18,6 +18,6 @@ Flutter jailbreak and root detection plugin
   s.dependency 'IOSSecuritySuite'
   
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 end
 
