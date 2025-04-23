@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     bool developerMode;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      jailbroken = await FlutterJailbreakDetection.jailbroken;
+      jailbroken = await FlutterJailbreakDetection.jailbroken();
       developerMode = await FlutterJailbreakDetection.developerMode;
     } on PlatformException {
       jailbroken = true;
@@ -52,10 +52,14 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Jailbroken plugin example app'),
         ),
-        body:  Center(
-          child: Column( mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[Text('Jailbroken: ${_jailbroken == null ? "Unknown" : _jailbroken! ? "YES" : "NO"}'),
-            Text('Developer mode: ${_developerMode == null ? "Unknown" : _developerMode! ? "YES" : "NO"}')
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                  'Jailbroken: ${_jailbroken == null ? "Unknown" : _jailbroken! ? "YES" : "NO"}'),
+              Text(
+                  'Developer mode: ${_developerMode == null ? "Unknown" : _developerMode! ? "YES" : "NO"}')
             ],
           ),
         ),
