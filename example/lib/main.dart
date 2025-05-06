@@ -13,6 +13,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool? _jailbroken;
+  JailbreakDetails? _jailbrokenDetails;
   bool? _developerMode;
 
   @override
@@ -24,13 +25,16 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     bool jailbroken;
+    JailbreakDetails jailbrokenDetails;
     bool developerMode;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       jailbroken = await FlutterJailbreakDetection.jailbroken;
+      jailbrokenDetails = await FlutterJailbreakDetection.jailbrokenDetails;
       developerMode = await FlutterJailbreakDetection.developerMode;
     } on PlatformException {
       jailbroken = true;
+      jailbrokenDetails = JailbreakDetails({});
       developerMode = true;
     }
 
@@ -41,6 +45,7 @@ class _MyAppState extends State<MyApp> {
 
     setState(() {
       _jailbroken = jailbroken;
+      _jailbrokenDetails = jailbrokenDetails;
       _developerMode = developerMode;
     });
   }
@@ -55,6 +60,7 @@ class _MyAppState extends State<MyApp> {
         body:  Center(
           child: Column( mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[Text('Jailbroken: ${_jailbroken == null ? "Unknown" : _jailbroken! ? "YES" : "NO"}'),
+            Text(_jailbrokenDetails.toString()),
             Text('Developer mode: ${_developerMode == null ? "Unknown" : _developerMode! ? "YES" : "NO"}')
             ],
           ),

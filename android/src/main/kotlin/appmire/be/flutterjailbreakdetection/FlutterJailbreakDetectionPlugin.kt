@@ -42,6 +42,9 @@ class FlutterJailbreakDetectionPlugin : FlutterPlugin, MethodCallHandler {
         if (call.method.equals("jailbroken")) {
             val rootBeer = RootBeer(context)
             result.success(rootBeer.isRooted)
+        } else if (call.method.equals("jailbrokenDetails")) {
+            val rootBeer = RootBeer(context)
+            result.success("{\"status\": ${rootBeer.isRooted}, \"message\": \"For Compatibililty\"}")
         } else if (call.method.equals("developerMode")) {
             result.success(isDevMode())
         } else {

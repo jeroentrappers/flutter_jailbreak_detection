@@ -15,6 +15,11 @@ public class SwiftFlutterJailbreakDetectionPlugin: NSObject, FlutterPlugin {
             let check2 = IOSSecuritySuite.amIJailbroken()
             result(check2)
             break
+        case "jailbrokenDetails":
+            let details = IOSSecuritySuite.amIJailbrokenWithFailMessage()
+            let m = details.failMessage.isEmpty ? "" : details.failMessage
+            result("{\"status\": \(details.jailbroken), \"message\": \"\(m)\"}")
+            break
         case "developerMode":
             result(IOSSecuritySuite.amIRunInEmulator())
             break
