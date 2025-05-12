@@ -23,7 +23,7 @@ object ExternalStorageCheck {
                 val pi = pm.getPackageInfo(context.packageName, 0)
                 val ai = pi.applicationInfo
                 return ai?.flags?.and(ApplicationInfo.FLAG_EXTERNAL_STORAGE) == ApplicationInfo.FLAG_EXTERNAL_STORAGE
-            } catch (e: PackageManager.NameNotFoundException) {
+            } catch (_: PackageManager.NameNotFoundException) {
                 // ignore
             }
         }
@@ -36,7 +36,7 @@ object ExternalStorageCheck {
             } else if (filesDir.contains("/mnt/") || filesDir.contains("/sdcard/")) {
                 return true
             }
-        } catch (e: Throwable) {
+        } catch (_: Throwable) {
             // ignore
         }
         return false
