@@ -15,7 +15,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.w3conext.jailbreak_root_detection
+        package: appmire.be.flutterjailbreakdetection
         pluginClass: FlutterJailbreakDetectionPlugin
       ios:
         pluginClass: FlutterJailbreakDetectionPlugin
