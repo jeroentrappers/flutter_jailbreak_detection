@@ -1,21 +1,24 @@
 name: flutter_jailbreak_detection
-description: Flutter jailbreak and root detection plugin. This plugin wraps Rootbeer for use on Android and DTTJailbreakDetection for use on iOS. 
+description: "Flutter jailbreak and root detection plugin. This plugin wraps Rootbeer for use on Android and IOSSecuritySuite for use on iOS."
 version: 1.10.0
 homepage: https://github.com/jeroentrappers/flutter_jailbreak_detection
 
 environment:
   sdk: '>=2.12.0 <4.0.0'
-  flutter: ">=1.10.0"
+  flutter: '>=2.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
+dev_dependencies:
+  flutter_lints: ^6.0.0
+
 flutter:
   plugin:
     platforms:
       android:
-        package: appmire.be.flutterjailbreakdetection
+        package: appmire.be.flutter_jailbreak_detection
         pluginClass: FlutterJailbreakDetectionPlugin
       ios:
         pluginClass: FlutterJailbreakDetectionPlugin
