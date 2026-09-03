@@ -10,8 +10,9 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.FlutterPlugin.FlutterPluginBinding
-
-
+import android.os.Handler
+import android.os.Looper
+import java.lang.Thread
 
 class FlutterJailbreakDetectionPlugin : FlutterPlugin, MethodCallHandler {
     private lateinit var context: Context
@@ -40,8 +41,16 @@ class FlutterJailbreakDetectionPlugin : FlutterPlugin, MethodCallHandler {
 
     override fun onMethodCall(call: MethodCall, result: Result): Unit {
         if (call.method.equals("jailbroken")) {
-            val rootBeer = RootBeer(context)
-            result.success(rootBeer.isRooted)
+            Thread {
+            val isRooted = try {
+                RootBeer(context).isRooted
+                } catch (e: Exception) {
+                    false
+                }    
+               Handler(Looper.getMainLooper()).post {
+                   result.success(isRooted)
+                }
+            }.start()
         } else if (call.method.equals("developerMode")) {
             result.success(isDevMode())
         } else {
